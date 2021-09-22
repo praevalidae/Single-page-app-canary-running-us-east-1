@@ -24,16 +24,18 @@
         );
     })(
         'nexus',
-        'a5568e4a-ea13-4d84-b02a-7b5e48fb7922',
-        'hqia-test-ingestion-09/17',
+        '759089c2-54f0-4252-b793-aa0aab06086b',
+        'errorsEndToEnd',
         '1.0.0',
         'us-east-1',
         'https://d1ktxyteejjrbw.cloudfront.net/assets/rum-javascript-telemetry.js',
         {
-            identityPoolId: 'us-east-1:427ca434-b1d7-4661-ba2a-15db2875dc6f',
-            guestRoleArn: 'arn:aws:iam::750664202209:role/Nexus-Monitor-us-east-1-750664202209-6164569291361-Unauth',
+            
+            guestRoleArn: 'arn:aws:iam::750664202209:role/Nexus-Monitor-us-east-1-828723501657-3110943532361-Unauth',
+	    allowCookies: true,
             endpoint: 'https://dataplane.us-east-1.prod.rum.aws.dev',
-            sessionSampleRate: 1
+            sessionSampleRate: 1,
+	    dataCollection: [ 'errors', 'performance', 'journey', 'interaction', 'http' ]
         }
     );
 </script>
