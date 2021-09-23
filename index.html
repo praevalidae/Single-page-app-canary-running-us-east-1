@@ -24,16 +24,18 @@
         );
     })(
         'nexus',
-        '759089c2-54f0-4252-b793-aa0aab06086b',
-        'errorsEndToEnd',
+        '2435cd28-6717-46e0-abf4-67d954ee1a57',
+        'testingHttp7',
         '1.0.0',
         'us-east-1',
         'https://d1ktxyteejjrbw.cloudfront.net/assets/rum-javascript-telemetry.js',
         {
-            
-            
+            identityPoolId: 'us-east-1:af2cadbd-6e25-44d5-be26-8d328c4aebe2',
+            guestRoleArn: 'arn:aws:iam::750664202209:role/Nexus-Monitor-us-east-1-828723501657-8546251732361-Unauth',
             endpoint: 'https://dataplane.us-east-1.prod.rum.aws.dev',
-            sessionSampleRate: 1
+            allowCookies: true,
+    	    sessionSampleRate: 1,
+    	    dataCollection: [ 'errors', 'performance', 'journey', 'interaction', 'http' ]
         }
     );
 </script>
@@ -46,7 +48,7 @@
 			<button style="font-size: x-large;padding: 5px;" onclick="jsError()">Generate JS Error</button>
 			<button style="font-size: x-large;padding: 5px;" onclick="httpError()">Generate HTTP Error</button>
 		</h2>
-		<h1><a href="#">Single Page App Without A Framework2</a></h1>
+		<h1><a href="#">Single Page App Without A Framework</a></h1>
 	</header>
 
 	<div class="main-content">
