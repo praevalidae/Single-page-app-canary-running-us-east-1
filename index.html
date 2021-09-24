@@ -31,10 +31,11 @@
         'https://d1ktxyteejjrbw.cloudfront.net/assets/rum-javascript-telemetry.js',
         {
             identityPoolId: 'us-east-1:93e63f62-576e-40ec-acca-0515f0f49929',
+	    allowCookies: true,
             guestRoleArn: 'arn:aws:iam::750664202209:role/Nexus-Monitor-us-east-1-750664202209-8449483152361-Unauth',
             endpoint: 'https://dataplane.us-east-1.prod.rum.aws.dev',
             sessionSampleRate: 1,
-dataCollection: [ 'errors', 'performance', 'journey', 'interaction', 'http' ]
+	    dataCollection: [ 'errors', 'performance', 'journey', 'interaction', 'http' ]
         }
     );
 </script>
@@ -47,7 +48,7 @@ dataCollection: [ 'errors', 'performance', 'journey', 'interaction', 'http' ]
 			<button style="font-size: x-large;padding: 5px;" onclick="jsError()">Generate JS Error</button>
 			<button style="font-size: x-large;padding: 5px;" onclick="httpError()">Generate HTTP Error</button>
 		</h2>
-		<h1><a href="#">Single Page App Without A Framework 5</a></h1>
+		<h1><a href="#">Single Page App Without A Framework</a></h1>
 	</header>
 
 	<div class="main-content">
